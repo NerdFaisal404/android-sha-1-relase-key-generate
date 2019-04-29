@@ -4,3 +4,7 @@ C:\Program Files\Java\jdk1.8.0_144\bin>keytool -exportcert -alias taxi_customer 
 
 # android-sha-1-Debug-key-generate
 C:\Program Files\Java\jdk1.8.0_181\bin>keytool -exportcert -alias androiddebugkey -keystore "C:\Users\Android-Dev\.android\debug.keystore" | "C:\OpenSSL\bin\openssl" sha1 -binary |"C:\OpenSSL\bin\openssl" base64
+
+# For Mac OS
+keytool -exportcert -alias taxi_customer -keystore /Users/lover/Dropbox/Android\ App/Le\ Bonbon\ app/taxi_customer.keystore | openssl sha1 -binary | openssl base64
+
